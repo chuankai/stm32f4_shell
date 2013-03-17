@@ -1,0 +1,11 @@
+eclipse.preferences.version=1
+environment/project/0.1836279708/PATH/delimiter=\:
+environment/project/0.1836279708/PATH/operation=append
+environment/project/0.1836279708/PATH/value=/Users/chuankai/bin/yagarto-4.7.2/bin
+environment/project/0.1836279708/append=true
+environment/project/0.1836279708/appendContributed=true
+environment/project/org.eclipse.cdt.cross.arm.gnu.summon.macosx.toolchain.base.1437280667/PATH/delimiter=\:
+environment/project/org.eclipse.cdt.cross.arm.gnu.summon.macosx.toolchain.base.1437280667/PATH/operation=append
+environment/project/org.eclipse.cdt.cross.arm.gnu.summon.macosx.toolchain.base.1437280667/PATH/value=/Users/chuankai/bin/yagarto-4.7.2/bin
+environment/project/org.eclipse.cdt.cross.arm.gnu.summon.macosx.toolchain.base.1437280667/append=true
+environment/project/org.eclipse.cdt.cross.arm.gnu.summon.macosx.toolchain.base.1437280667/appendContributed=true

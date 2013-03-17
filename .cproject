@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?>
+
+<cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="org.eclipse.cdt.cross.arm.gnu.summon.macosx.toolchain.base.1437280667">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="org.eclipse.cdt.cross.arm.gnu.summon.macosx.toolchain.base.1437280667" moduleId="org.eclipse.cdt.core.settings" name="Default">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.GNU_ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration buildProperties="" description="" id="org.eclipse.cdt.cross.arm.gnu.summon.macosx.toolchain.base.1437280667" name="Default" parent="org.eclipse.cdt.build.core.emptycfg">
+					<folderInfo id="org.eclipse.cdt.cross.arm.gnu.summon.macosx.toolchain.base.1437280667.1179075036" name="/" resourcePath="">
+						<toolChain id="org.eclipse.cdt.cross.arm.gnu.summon.macosx.toolchain.base.1657552752" name="org.eclipse.cdt.cross.arm.gnu.summon.macosx.toolchain.base" superClass="org.eclipse.cdt.cross.arm.gnu.summon.macosx.toolchain.base">
+							<option id="org.eclipse.cdt.cross.arm.gnu.summon.macosx.option.target.processor.1282461610" name="Processor" superClass="org.eclipse.cdt.cross.arm.gnu.summon.macosx.option.target.processor"/>
+							<option id="org.eclipse.cdt.cross.arm.gnu.summon.macosx.option.target.thumb.1838476526" name="Thumb (-mthumb)" superClass="org.eclipse.cdt.cross.arm.gnu.summon.macosx.option.target.thumb"/>
+							<option id="org.eclipse.cdt.cross.arm.gnu.summon.macosx.option.target.thumbinterwork.1310015965" name="Thumb interwork (-mthumb-interwork)" superClass="org.eclipse.cdt.cross.arm.gnu.summon.macosx.option.target.thumbinterwork"/>
+							<option id="org.eclipse.cdt.cross.arm.gnu.summon.macosx.option.target.endiannes.885404433" name="Endiannes" superClass="org.eclipse.cdt.cross.arm.gnu.summon.macosx.option.target.endiannes"/>
+							<option id="org.eclipse.cdt.cross.arm.gnu.summon.macosx.option.target.fpu.abi.1598618635" name="Float ABI" superClass="org.eclipse.cdt.cross.arm.gnu.summon.macosx.option.target.fpu.abi"/>
+							<option id="org.eclipse.cdt.cross.arm.gnu.summon.macosx.option.target.fpu.unit.772785770" name="FPU Type" superClass="org.eclipse.cdt.cross.arm.gnu.summon.macosx.option.target.fpu.unit"/>
+							<option id="org.eclipse.cdt.cross.arm.gnu.summon.macosx.option.debugging.level.976119227" name="Debug level" superClass="org.eclipse.cdt.cross.arm.gnu.summon.macosx.option.debugging.level"/>
+							<option id="org.eclipse.cdt.cross.arm.gnu.summon.macosx.option.debugging.format.612947617" name="Debug format" superClass="org.eclipse.cdt.cross.arm.gnu.summon.macosx.option.debugging.format"/>
+							<option id="org.eclipse.cdt.cross.arm.gnu.summon.macosx.option.debugging.other.1804968783" name="Other debugging flags" superClass="org.eclipse.cdt.cross.arm.gnu.summon.macosx.option.debugging.other"/>
+							<option id="org.eclipse.cdt.cross.arm.gnu.summon.macosx.option.debugging.prof.251201536" name="Generate prof information (-p)" superClass="org.eclipse.cdt.cross.arm.gnu.summon.macosx.option.debugging.prof"/>
+							<option id="org.eclipse.cdt.cross.arm.gnu.summon.macosx.option.debugging.gprof.488796722" name="Generate gprof information (-pg)" superClass="org.eclipse.cdt.cross.arm.gnu.summon.macosx.option.debugging.gprof"/>
+							<option id="org.eclipse.cdt.cross.arm.gnu.summon.macosx.option.addtools.createflash.1147178954" name="Create Flash Image" superClass="org.eclipse.cdt.cross.arm.gnu.summon.macosx.option.addtools.createflash"/>
+							<option id="org.eclipse.cdt.cross.arm.gnu.summon.macosx.option.addtools.createlisting.923635772" name="Create Extended Listing" superClass="org.eclipse.cdt.cross.arm.gnu.summon.macosx.option.addtools.createlisting"/>
+							<option id="org.eclipse.cdt.cross.arm.gnu.summon.macosx.option.addtools.printsize.211794047" name="Print Size" superClass="org.eclipse.cdt.cross.arm.gnu.summon.macosx.option.addtools.printsize"/>
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.GNU_ELF" id="org.eclipse.cdt.cross.arm.gnu.summon.macosx.platform.base.1747360326" isAbstract="false" name="Mac OS X Platform" osList="macosx" superClass="org.eclipse.cdt.cross.arm.gnu.summon.macosx.platform.base"/>
+							<builder id="org.eclipse.cdt.cross.arm.gnu.summon.macosx.builder.base.1272862173" keepEnvironmentInBuildfile="false" managedBuildOn="false" name="ARM Summon Mac OS X GNU Make builder" parallelBuildOn="true" parallelizationNumber="3" superClass="org.eclipse.cdt.cross.arm.gnu.summon.macosx.builder.base"/>
+							<tool id="org.eclipse.cdt.cross.arm.gnu.summon.macosx.assembler.base.24217066" name="ARM Summon Mac OS X GCC Assembler" superClass="org.eclipse.cdt.cross.arm.gnu.summon.macosx.assembler.base">
+								<inputType id="org.eclipse.cdt.cross.arm.gnu.summon.macosx.assembler.base.input.1909103769" superClass="org.eclipse.cdt.cross.arm.gnu.summon.macosx.assembler.base.input"/>
+							</tool>
+							<tool id="org.eclipse.cdt.cross.arm.gnu.summon.macosx.c.compiler.base.842210145" name="ARM Summon Mac OS X GCC C Compiler" superClass="org.eclipse.cdt.cross.arm.gnu.summon.macosx.c.compiler.base">
+								<inputType id="org.eclipse.cdt.cross.arm.gnu.summon.macosx.c.compiler.base.input.996082773" superClass="org.eclipse.cdt.cross.arm.gnu.summon.macosx.c.compiler.base.input"/>
+							</tool>
+							<tool id="org.eclipse.cdt.cross.arm.gnu.summon.macosx.cpp.compiler.base.1348053519" name="ARM Summon Mac OS X GCC C++ Compiler" superClass="org.eclipse.cdt.cross.arm.gnu.summon.macosx.cpp.compiler.base">
+								<inputType id="org.eclipse.cdt.cross.arm.gnu.summon.macosx.cpp.compiler.base.input.1967356" superClass="org.eclipse.cdt.cross.arm.gnu.summon.macosx.cpp.compiler.base.input"/>
+							</tool>
+							<tool id="org.eclipse.cdt.cross.arm.gnu.summon.macosx.c.linker.base.161476893" name="ARM Summon Mac OS X GCC C Linker" superClass="org.eclipse.cdt.cross.arm.gnu.summon.macosx.c.linker.base"/>
+							<tool id="org.eclipse.cdt.cross.arm.gnu.summon.macosx.cpp.linker.base.662165904" name="ARM Summon Mac OS X GCC C++ Linker" superClass="org.eclipse.cdt.cross.arm.gnu.summon.macosx.cpp.linker.base"/>
+							<tool id="org.eclipse.cdt.cross.arm.gnu.summon.macosx.archiver.base.1564550509" name="ARM Summon Mac OS X GCC Archiver" superClass="org.eclipse.cdt.cross.arm.gnu.summon.macosx.archiver.base"/>
+							<tool id="org.eclipse.cdt.cross.arm.gnu.summon.macosx.createflash.base.1081110079" name="ARM Summon Mac OS X GNU Create Flash Image" superClass="org.eclipse.cdt.cross.arm.gnu.summon.macosx.createflash.base"/>
+							<tool id="org.eclipse.cdt.cross.arm.gnu.summon.macosx.createlisting.base.1218180061" name="ARM Summon Mac OS X GNU Create Listing" superClass="org.eclipse.cdt.cross.arm.gnu.summon.macosx.createlisting.base"/>
+							<tool id="org.eclipse.cdt.cross.arm.gnu.summon.macosx.printsize.base.2119496616" name="ARM Summon Mac OS X GNU Print Size" superClass="org.eclipse.cdt.cross.arm.gnu.summon.macosx.printsize.base"/>
+						</toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		<scannerConfigBuildInfo instanceId="0.1836279708">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.cross.arm.gnu.ARM_CS_GCCManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+	</storageModule>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="stm32f4_shell.null.110152053" name="stm32f4_shell"/>
+	</storageModule>
+	<storageModule moduleId="refreshScope" versionNumber="1">
+		<resource resourceType="PROJECT" workspacePath="/stm32f4_shell"/>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
+</cproject>
