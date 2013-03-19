@@ -117,7 +117,7 @@
   * @param  GPIOx: where x can be (A..I) to select the GPIO peripheral.
   * @retval None
   */
-void GPIO_DeInit(GPIO_TypeDef* GPIOx)
+void GPIO_DeInit(ST_GPIO_TypeDef* GPIOx)
 {
   /* Check the parameters */
   assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
@@ -179,7 +179,7 @@ void GPIO_DeInit(GPIO_TypeDef* GPIOx)
   *         the configuration information for the specified GPIO peripheral.
   * @retval None
   */
-void GPIO_Init(GPIO_TypeDef* GPIOx, GPIO_InitTypeDef* GPIO_InitStruct)
+void GPIO_Init(ST_GPIO_TypeDef* GPIOx, GPIO_InitTypeDef* GPIO_InitStruct)
 {
   uint32_t pinpos = 0x00, pos = 0x00 , currentpin = 0x00;
 
@@ -252,7 +252,7 @@ void GPIO_StructInit(GPIO_InitTypeDef* GPIO_InitStruct)
   *          This parameter can be any combination of GPIO_Pin_x where x can be (0..15).
   * @retval None
   */
-void GPIO_PinLockConfig(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin)
+void GPIO_PinLockConfig(ST_GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin)
 {
   __IO uint32_t tmp = 0x00010000;
 
@@ -296,7 +296,7 @@ void GPIO_PinLockConfig(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin)
   *         This parameter can be GPIO_Pin_x where x can be (0..15).
   * @retval The input port pin value.
   */
-uint8_t GPIO_ReadInputDataBit(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin)
+uint8_t GPIO_ReadInputDataBit(ST_GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin)
 {
   uint8_t bitstatus = 0x00;
 
@@ -320,7 +320,7 @@ uint8_t GPIO_ReadInputDataBit(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin)
   * @param  GPIOx: where x can be (A..I) to select the GPIO peripheral.
   * @retval GPIO input data port value.
   */
-uint16_t GPIO_ReadInputData(GPIO_TypeDef* GPIOx)
+uint16_t GPIO_ReadInputData(ST_GPIO_TypeDef* GPIOx)
 {
   /* Check the parameters */
   assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
@@ -335,7 +335,7 @@ uint16_t GPIO_ReadInputData(GPIO_TypeDef* GPIOx)
   *          This parameter can be GPIO_Pin_x where x can be (0..15).
   * @retval The output port pin value.
   */
-uint8_t GPIO_ReadOutputDataBit(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin)
+uint8_t GPIO_ReadOutputDataBit(ST_GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin)
 {
   uint8_t bitstatus = 0x00;
 
@@ -359,7 +359,7 @@ uint8_t GPIO_ReadOutputDataBit(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin)
   * @param  GPIOx: where x can be (A..I) to select the GPIO peripheral.
   * @retval GPIO output data port value.
   */
-uint16_t GPIO_ReadOutputData(GPIO_TypeDef* GPIOx)
+uint16_t GPIO_ReadOutputData(ST_GPIO_TypeDef* GPIOx)
 {
   /* Check the parameters */
   assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
@@ -377,7 +377,7 @@ uint16_t GPIO_ReadOutputData(GPIO_TypeDef* GPIOx)
   *          This parameter can be any combination of GPIO_Pin_x where x can be (0..15).
   * @retval None
   */
-void GPIO_SetBits(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin)
+void GPIO_SetBits(ST_GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin)
 {
   /* Check the parameters */
   assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
@@ -396,7 +396,7 @@ void GPIO_SetBits(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin)
   *          This parameter can be any combination of GPIO_Pin_x where x can be (0..15).
   * @retval None
   */
-void GPIO_ResetBits(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin)
+void GPIO_ResetBits(ST_GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin)
 {
   /* Check the parameters */
   assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
@@ -416,7 +416,7 @@ void GPIO_ResetBits(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin)
   *            @arg Bit_SET: to set the port pin
   * @retval None
   */
-void GPIO_WriteBit(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin, BitAction BitVal)
+void GPIO_WriteBit(ST_GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin, BitAction BitVal)
 {
   /* Check the parameters */
   assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
@@ -439,7 +439,7 @@ void GPIO_WriteBit(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin, BitAction BitVal)
   * @param  PortVal: specifies the value to be written to the port output data register.
   * @retval None
   */
-void GPIO_Write(GPIO_TypeDef* GPIOx, uint16_t PortVal)
+void GPIO_Write(ST_GPIO_TypeDef* GPIOx, uint16_t PortVal)
 {
   /* Check the parameters */
   assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
@@ -453,7 +453,7 @@ void GPIO_Write(GPIO_TypeDef* GPIOx, uint16_t PortVal)
   * @param  GPIO_Pin: Specifies the pins to be toggled.
   * @retval None
   */
-void GPIO_ToggleBits(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin)
+void GPIO_ToggleBits(ST_GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin)
 {
   /* Check the parameters */
   assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
@@ -526,7 +526,7 @@ void GPIO_ToggleBits(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin)
   *            @arg GPIO_AF_EVENTOUT: Connect EVENTOUT pins to AF15
   * @retval None
   */
-void GPIO_PinAFConfig(GPIO_TypeDef* GPIOx, uint16_t GPIO_PinSource, uint8_t GPIO_AF)
+void GPIO_PinAFConfig(ST_GPIO_TypeDef* GPIOx, uint16_t GPIO_PinSource, uint8_t GPIO_AF)
 {
   uint32_t temp = 0x00;
   uint32_t temp_2 = 0x00;

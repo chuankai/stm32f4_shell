@@ -70,7 +70,6 @@ include $(CHIBIOS)/os/hal/platforms/STM32F4xx/platform.mk
 include $(CHIBIOS)/os/hal/hal.mk
 include $(CHIBIOS)/os/ports/GCC/ARMCMx/STM32F4xx/port.mk
 include $(CHIBIOS)/os/kernel/kernel.mk
-include $(CHIBIOS)/test/test.mk
 
 # Define linker script file here
 LDSCRIPT= $(PORTLD)/STM32F407xG.ld
@@ -86,7 +85,9 @@ CSRC = $(PORTSRC) \
        $(BOARDSRC) \
        $(CHIBIOS)/os/various/lis302dl.c \
        $(CHIBIOS)/os/various/chprintf.c \
-       main.c
+       main.c \
+       STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.c \
+       test.c
 
 # C++ sources that can be compiled in ARM or THUMB mode depending on the global
 # setting.
@@ -171,7 +172,7 @@ DDEFS =
 DADEFS =
 
 # List all default directories to look for include files here
-DINCDIR =
+DINCDIR = STM32F4xx_StdPeriph_Driver/inc
 
 # List the default directory to look for the libraries here
 DLIBDIR =

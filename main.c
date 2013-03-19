@@ -27,7 +27,6 @@
 
 #include "ch.h"
 #include "hal.h"
-#include "test.h"
 #include "lis302dl.h"
 #include "chprintf.h"
 
@@ -212,14 +211,6 @@ int main(void) {
   palSetPadMode(GPIOA, 3, PAL_MODE_ALTERNATE(7));
 
   /*
-   * If the user button is pressed after the reset then the test suite is
-   * executed immediately before activating the various device drivers in
-   * order to not alter the benchmark scores.
-   */
-  if (palReadPad(GPIOA, GPIOA_BUTTON))
-    TestThread(&SD2);
-
-  /*
    * Initializes the SPI driver 2. The SPI2 signals are routed as follow:
    * PB12 - NSS.
    * PB13 - SCK.
@@ -274,9 +265,6 @@ int main(void) {
    */
   while (TRUE) {
     int8_t x, y, z;
-
-    if (palReadPad(GPIOA, GPIOA_BUTTON))
-      TestThread(&SD2);
 
     x = (int8_t)lis302dlReadRegister(&SPID1, LIS302DL_OUTX);
     y = (int8_t)lis302dlReadRegister(&SPID1, LIS302DL_OUTY);

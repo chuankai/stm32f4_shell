@@ -29,7 +29,7 @@
 #endif
 
 /* Includes ------------------------------------------------------------------*/
-#include "stm32f4xx.h"
+#include "st_stm32f4xx.h"
 
 /** @addtogroup STM32F4xx_StdPeriph_Driver
   * @{
@@ -368,26 +368,26 @@ typedef struct
 /* Exported functions --------------------------------------------------------*/ 
 
 /*  Function used to set the GPIO configuration to the default reset state ****/
-void GPIO_DeInit(GPIO_TypeDef* GPIOx);
+void GPIO_DeInit(ST_GPIO_TypeDef* GPIOx);
 
 /* Initialization and Configuration functions *********************************/
-void GPIO_Init(GPIO_TypeDef* GPIOx, GPIO_InitTypeDef* GPIO_InitStruct);
+void GPIO_Init(ST_GPIO_TypeDef* GPIOx, GPIO_InitTypeDef* GPIO_InitStruct);
 void GPIO_StructInit(GPIO_InitTypeDef* GPIO_InitStruct);
-void GPIO_PinLockConfig(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin);
+void GPIO_PinLockConfig(ST_GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin);
 
 /* GPIO Read and Write functions **********************************************/
-uint8_t GPIO_ReadInputDataBit(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin);
-uint16_t GPIO_ReadInputData(GPIO_TypeDef* GPIOx);
-uint8_t GPIO_ReadOutputDataBit(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin);
-uint16_t GPIO_ReadOutputData(GPIO_TypeDef* GPIOx);
-void GPIO_SetBits(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin);
-void GPIO_ResetBits(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin);
-void GPIO_WriteBit(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin, BitAction BitVal);
-void GPIO_Write(GPIO_TypeDef* GPIOx, uint16_t PortVal);
-void GPIO_ToggleBits(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin);
+uint8_t GPIO_ReadInputDataBit(ST_GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin);
+uint16_t GPIO_ReadInputData(ST_GPIO_TypeDef* GPIOx);
+uint8_t GPIO_ReadOutputDataBit(ST_GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin);
+uint16_t GPIO_ReadOutputData(ST_GPIO_TypeDef* GPIOx);
+void GPIO_SetBits(ST_GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin);
+void GPIO_ResetBits(ST_GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin);
+void GPIO_WriteBit(ST_GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin, BitAction BitVal);
+void GPIO_Write(ST_GPIO_TypeDef* GPIOx, uint16_t PortVal);
+void GPIO_ToggleBits(ST_GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin);
 
 /* GPIO Alternate functions configuration function ****************************/
-void GPIO_PinAFConfig(GPIO_TypeDef* GPIOx, uint16_t GPIO_PinSource, uint8_t GPIO_AF);
+void GPIO_PinAFConfig(ST_GPIO_TypeDef* GPIOx, uint16_t GPIO_PinSource, uint8_t GPIO_AF);
 
 #ifdef __cplusplus
 }
